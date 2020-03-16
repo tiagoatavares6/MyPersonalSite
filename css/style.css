@@ -113,7 +113,7 @@ p {
     padding-bottom: 10px;
  }
 
- /* The sidebar menu
+ /* The sidebar menu (left)
 =================================================================== */
 .sidenav {
     height: 100%; /* Full-height: remove this if you want "auto" height */
@@ -121,7 +121,7 @@ p {
     position: fixed; /* Fixed Sidebar (stay in place on scroll) */
     z-index: 1; /* Stay on top */
     top: 0; /* Stay at the top */
-    left: 0.5;
+    /* left: 0.5; */
     background-color: #111; /* Black */
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 20px;
@@ -132,12 +132,15 @@ p {
     padding: 25px 10px 6px 16px;
     text-decoration: none;
     font-size: 25px;
+    font-family: 'Arial';
+    text-align: center;
     color: #818181;
     display: block;
   }
   
   /* When you mouse over the navigation links, change their color */
   .sidenav a:hover {
+    /* background: #ddd; */
     color: #f1f1f1;
   }
   
@@ -146,12 +149,20 @@ p {
     margin-left: 160px; /* Same as the width of the sidebar */
     padding: 0px 10px;
   }
+
+  /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+    div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+  }
   
   /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
   }
+
 
 /* Intro
   =================================================================== */
@@ -161,6 +172,7 @@ p {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
+    margin-left: 100px; /* Same as the width of the sidebar */
     width: 100%;
     height: 100vh;
     position: relative;
@@ -198,7 +210,7 @@ p {
 }
 
 .col-md-12 h1 {
-  font-family: 'Amatic SC', cursive;
+  font-family: 'Open Sans Condensed', cursive;
   font-weight: 400;
   letter-spacing: 2px;
 }
@@ -221,7 +233,7 @@ p {
    line-height:1.4
 }
 
-#reidalio {
+#WillRogers{
    text-align: right;
 }
 
@@ -280,6 +292,7 @@ p {
  * =================================================================== */
 
 section {
+    margin-left: 200px; /* Same as the width of the sidebar */
     padding-top: 100px;
     padding-bottom: 100px;
 }
@@ -358,6 +371,7 @@ section {
 
 .section-hobbies {
     background: url("./write.jpg") repeat center center;
+    margin-left: 100px; /* Same as the width of the sidebar */
     opacity: 0.9;
     font-weight: bolder;
     width: 100%;
@@ -399,6 +413,7 @@ section {
 
 footer {
     display: block;
+    margin-left: 200px; /* Same as the width of the sidebar */
     position: static;
     text-align: center;
     bottom: 0;
