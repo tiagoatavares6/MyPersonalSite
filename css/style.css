@@ -50,7 +50,8 @@ hr {
     font-size:30px
 }
 .h3,h3{
-    font-size:24px
+    padding-left:15px;
+    font-size:20px
 }
 .h4,h4{
     font-size:18px
@@ -135,6 +136,15 @@ p {
     font-family: 'Arial';
     text-align: center;
     color: #818181;
+    display: block;
+  }
+  .sidenav h33 {
+    padding: 25px 10px 6px 16px;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Arial';
+    text-align: center;
+    color: #eed3af;
     display: block;
   }
   
